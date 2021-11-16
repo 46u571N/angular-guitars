@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-guitars';
+  title = 'Tec-guitars';
+  year = new Date().getFullYear();
+
 }
