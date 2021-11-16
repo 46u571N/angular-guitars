@@ -1,1 +1,29 @@
-<p>guitar-list works!</p>
+<table class="table table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Imagen</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let guitar of guitars" >
+        <tr *ngIf="guitar.price!=0" [ngClass]="{'clearance': guitar.clearance}">
+          <td ><img [src]="guitar.image" [alt]="guitar.name"></td>
+          <td >{{guitar.name}}</td>
+          <td >{{guitar.brand}}</td>
+          <td >{{guitar.price | currency:'ARS'}}</td>
+          <td >{{guitar.description}}</td>
+          <td>
+            <!--div class="input-group input-group-sm mb-3">
+              <button type="button" class="btn btn-light btn-xs" (click)="downQuantity(guitar)">-</button>
+              <input class="form-control form-control-sm"  type="number" [(ngModel)]="guitar.quantity" (focusout)="verifyguitarQuantity(guitar)"/>
+              <button type="button" class="btn btn-light btn-xs" (click)="upQuantity(guitar)">+</button>
+            </div-->
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
