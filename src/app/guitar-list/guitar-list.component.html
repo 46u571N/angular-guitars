@@ -13,7 +13,7 @@
         <tr *ngIf="guitar.price!=0" [ngClass]="{'clearance': guitar.clearance}">
           <td ><img [src]="guitar.image" [alt]="guitar.name"></td>
           <td >{{guitar.name}}</td>
-          <td >{{guitar.brand}}</td>
+          <td >{{ guitar.brand.marca }}</td>
           <td >{{guitar.price | currency:'ARS'}}</td>
           <td >{{guitar.description}}</td>
           <td>

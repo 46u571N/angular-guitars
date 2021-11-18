@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscriber } from 'rxjs';
+import { GuitarDataService } from '../guitar-data.service';
 import { Guitar } from './guitar';
 
 @Component({
@@ -8,7 +10,9 @@ import { Guitar } from './guitar';
 })
 export class GuitarListComponent implements OnInit {
   
-    guitars: Guitar[] = [{
+    guitars: Guitar[] = [];
+    
+  /*  [{
       name: "Egc124",
       description: "electro-nylon",
       price: 11000,
@@ -34,10 +38,11 @@ export class GuitarListComponent implements OnInit {
       clearance: false,
     }
     ]
-
-  constructor() { }
+*/
+  constructor(private guitarsDataService : GuitarDataService ) { }
 
   ngOnInit(): void {
+    this.guitarsDataService.getAll().subscribe(guitars => this.guitars = guitars );
   }
 
 }
