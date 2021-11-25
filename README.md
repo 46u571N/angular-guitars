@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
+## Demo
+
+If you want to see the demo of this proyect deployed, you can visit https://tec-guitars.netlify.app/guitars .
+
+## Install
+
+$ git clone https://github.com/46u571N/angular-guitars.git
+
+$ yarn install
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
