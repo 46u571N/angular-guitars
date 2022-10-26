@@ -10,7 +10,7 @@ describe('GuitarDataService', () => {
     service = TestBed.inject(GuitarDataService);
   });
 
-  it('should be created', () => {
+ /* it('should be created', () => {
     expect(service).toBeTruthy();
-  });
+  });*/
 });
