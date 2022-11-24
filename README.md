@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Demo
 
-If you want to see the demo of this proyect deployed, you can visit https://tec-guitars.netlify.app .
+If you want to see the demo of this proyect deployed, you can visit  .
 
 ## Install
 
