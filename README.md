@@ -6,9 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 If you want to see the demo of this proyect deployed, you can visit https://angular-guitars.vercel.app/guitars .
 
-##Docker image
+## Docker image
 
-You can download it with: "docker pull santos2022/angular-guitars-app"  .
+You can download it with: "docker pull santos2022/angular-guitars-app" , or or directly from the repository in Docker Hub https://hub.docker.com/repositories/santos2022
 
 ## Install
 
