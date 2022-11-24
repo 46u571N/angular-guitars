@@ -4,7 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Demo
 
-If you want to see the demo of this proyect deployed, you can visit https://tec-guitars.netlify.app .
+If you want to see the demo of this proyect deployed, you can visit https://angular-guitars.vercel.app/guitars .
+
+##Docker image
+
+You can download it with: "docker pull santos2022/angular-guitars-app"  .
 
 ## Install
 
